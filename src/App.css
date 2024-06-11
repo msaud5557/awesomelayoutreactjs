@@ -1,38 +1,263 @@
-.App {
-  text-align: center;
+*{
+    margin: 0%;
+    padding: 0%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+    display: flex;
+    background-color:rgb(255 255 255);;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.main-container{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(255 255 255);;
+    width: 90vw;
+    height: 90vh;
+    
+    
+    
+}
+
+.header-main{
+    display: flex;
+    background-color: rgb(255 255 255);;
+    /* width: 100vw; */
+    height: 10%;
+    justify-content: space-between;
+    padding: 10px 100px;
+}
+
+.header-first{
+    display: flex;
+    flex-direction: row;
+    font-size: large;
+    align-items: center;
+}
+
+
+.nav-links ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    justify-content: center;
+}
+
+li{
+    padding: 0px 20px;
+    color: rgb(49, 47, 47);
+    font-size: medium;
+    font-size: 20px;
+}
+
+.logo{
+    margin-right: 100px;
+
+}
+
+.header-second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icons-first{
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.img-avatar{
+    margin-left: 10px;
+}
+
+.main-content-first{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(255 255 255);;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-direction: column;
+    align-items: center;
+    
+
+
+}
+.main-content-second{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(255 255 255);;
+    flex-direction: column;
+    padding: 80px 40px;
+    
+    
+
+}
+
+.main-content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 90%;
+    background-color: rgb(255 255 255);;
+    padding: auto;
+    justify-content: center;    
+    
+
+
+}  
+
+.main-img-part1{
+    border-radius: 10px;
+}
+
+.collective-img{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    
+}
+
+.small-img {
+    margin-left: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.box1{
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 10px;
+    
+}
+
+.box2{
+    display: flex;
+    margin: 10px 10px;
+
+}
+
+.box3{
+    margin: 0px 10px;
+    margin-right: 80px;
+}
+
+.box4{
+    margin: 20px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.box4part1{
+    margin-right: 10px;
+}
+
+.box4part2 button{
+    width: 60px;
+    height: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.box5{
+    margin-left: 10px;
+}
+
+.box6{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 10px;
+}
+
+.box6part1 button{
+    width: 40px;
+    height: 30px;
+    background-color: #f7f8fd;
+    border-radius: 4px;
+    border: none;
+    font-size: medium;
+
+
+
+
+}
+
+.box6part1{
+    display: flex;
+    flex-direction: row;
+}
+
+.box6part2{
+    margin-left: 40px;
+}
+
+.box6part2 button{
+    width: 150px;
+    height: 30px;
+    color: rgb(223, 221, 221);
+    border: none;
+    background-color: rgb(255 125 26);
+    border-radius: 10px;
+}
+
+.img-img{
+    border-radius: 5px;
+}
+
+.blur {
+    filter: blur(2px);
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+.main-img{
+    padding-top: 90px;
+}  
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.small-img img:hover {
+    filter: blur(2px);
+    transition: filter 0.3s ease;
   }
-  to {
-    transform: rotate(360deg);
+
+
+/* Add underline effect to navbar links on hover */
+.nav-links ul li {
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
   }
-}
+  
+  .nav-links ul li::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: rgb(255 125 26);
+    transition: width 0.3s ease;
+  }
+  
+  .nav-links ul li:hover::after {
+    width: 100%;
+    left: 0;
+    background: rgb(255 125 26);
+  }  
+
+
